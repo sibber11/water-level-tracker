@@ -18,23 +18,23 @@ if ($path === '' || $path === 'index.php') {
     handleWebInterface();
 } elseif ($path === 'api/receive-data') {
     // Redirect to receive-data.php
-    require __DIR__ . '/receive-data.php';
+    require __DIR__ . './../receive-data.php';
     exit;
 } elseif ($path === 'api/get-distance') {
     // Redirect to get-distance.php
-    require __DIR__ . '/get-distance.php';
+    require __DIR__ . './../get-distance.php';
     exit;
 } elseif ($path === 'api/fast-mode') {
     // Redirect to fast-mode-control.php
-    require __DIR__ . '/fast-mode-control.php';
+    require __DIR__ . './../fast-mode-control.php';
     exit;
 } elseif ($path === 'api/subscribe') {
     // Redirect to subscribe.php
-    require __DIR__ . '/subscribe.php';
+    require __DIR__ . './../subscribe.php';
     exit;
 } elseif ($path === 'api/delay-config') {
     // Redirect to delay-config.php
-    require __DIR__ . '/delay-config.php';
+    require __DIR__ . './../delay-config.php';
     exit;
 } else {
     // 404 Not Found
